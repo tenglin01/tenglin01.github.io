@@ -6,7 +6,7 @@
   const stored = localStorage.getItem('lang');
   const state = { lang: forced || stored || 'en' };
 
-  const apply = () => {
+  const applyLang = () => {
     document.documentElement.lang = state.lang;
     document.querySelectorAll('[data-lang]').forEach(el => {
       el.classList.toggle('hidden', el.dataset.lang !== state.lang);
@@ -18,9 +18,21 @@
 
   btn.addEventListener('click', () => {
     state.lang = state.lang === 'en' ? 'zh' : 'en';
-    apply();
+    applyLang();
   });
 
   // Default to English regardless of browser language
-  apply();
+  applyLang();
+
+  // Apple-like reveal on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.18 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 })();

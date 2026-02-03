@@ -3,121 +3,268 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Teng Lin — Personal Site</title>
+  <title>Teng Lin — Personal Portfolio</title>
+  <meta name="description" content="Teng Lin — Applied Analytics (Columbia). Business & Data Analysis."/>
   <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="images/profile.jpg" alt="Profile" onerror="this.style.display='none'"/>
-      <div class="title">
-        <h1 class="name">Teng Lin</h1>
-        <p class="tagline" data-lang="en">Applied Analytics (Columbia) — Business & Data Analysis</p>
-        <p class="tagline hidden" data-lang="zh">哥伦比亚大学 应用分析 硕士 — 业务与数据分析</p>
-        <div class="links">
-          <a href="mailto:tl3398@columbia.edu">tl3398@columbia.edu</a>
-          <a href="tel:+13329997876">+1 332‑999‑7876</a>
-          <a href="https://www.linkedin.com/in/teng-lin" target="_blank" rel="noreferrer noopener">LinkedIn</a>
-          <span class="lang-toggle"><button id="langBtn" class="toggle">中文</button></span>
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="topbar">
+        <div class="brand">Teng Lin</div>
+        <div class="topbar-actions">
+          <a class="btn ghost" href="Resume_TENG_LIN.pdf" download data-lang="en">Download Resume</a>
+          <a class="btn ghost hidden" href="Resume_TENG_LIN.pdf" download data-lang="zh">下载简历</a>
+          <button id="langBtn" class="toggle" aria-label="Toggle language">中文</button>
         </div>
       </div>
-    </div>
-  </div>
 
-  <nav>
-    <div class="nav container">
-      <a href="#about">About/关于我</a>
-      <a href="#skills">Skills/技能</a>
-      <a href="#experience">Experience/经历</a>
-      <a href="#projects">Projects/项目</a>
-      <a href="#education">Education/教育</a>
-      <a href="#contact">Contact/联系</a>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="pill" data-lang="en">Open to analytics, operations & consulting roles</div>
+          <div class="pill hidden" data-lang="zh">开放数据分析、运营与咨询岗位机会</div>
+          <h1 class="hero-name">Teng Lin</h1>
+          <p class="hero-title" data-lang="en">Applied Analytics (Columbia) · Business & Data Analysis</p>
+          <p class="hero-title hidden" data-lang="zh">哥伦比亚大学 应用分析 · 业务与数据分析</p>
+          <p class="hero-summary" data-lang="en">
+            Data-driven master’s student focused on analytics, process improvement, and decision support.
+            Experienced in consulting engagements, dashboard development, and cross-functional collaboration.
+          </p>
+          <p class="hero-summary hidden" data-lang="zh">
+            数据驱动型硕士生，聚焦业务分析、流程优化与决策支持；具备咨询项目、数据看板与跨团队协作经验。
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact" data-lang="en">Contact</a>
+            <a class="btn primary hidden" href="#contact" data-lang="zh">联系我</a>
+            <a class="btn outline" href="#projects" data-lang="en">View Projects</a>
+            <a class="btn outline hidden" href="#projects" data-lang="zh">查看项目</a>
+          </div>
+          <div class="hero-links">
+            <a href="mailto:tl3398@columbia.edu">tl3398@columbia.edu</a>
+            <span class="dot">•</span>
+            <a href="tel:+13329997876">+1 332-999-7876</a>
+            <span class="dot">•</span>
+            <a href="https://www.linkedin.com/in/teng-lin" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <img class="profile" src="images/profile.jpg" alt="Profile" onerror="this.style.display='none'"/>
+          <div class="card-section">
+            <h3 class="card-title" data-lang="en">Highlights</h3>
+            <h3 class="card-title hidden" data-lang="zh">亮点</h3>
+            <ul class="facts">
+              <li data-lang="en">M.S. Applied Analytics, Columbia (2024–2025 expected)</li>
+              <li class="hidden" data-lang="zh">哥伦比亚大学 应用分析硕士（2024–2025 预计）</li>
+              <li data-lang="en">B.S. Business Analytics & Finance, Syracuse (GPA 3.7/4.0)</li>
+              <li class="hidden" data-lang="zh">雪城大学 商业分析与金融学士（GPA 3.7/4.0）</li>
+              <li data-lang="en">Assistant Consultant, Capgemini (2023)</li>
+              <li class="hidden" data-lang="zh">凯捷 助理顾问（2023）</li>
+            </ul>
+          </div>
+          <div class="card-section">
+            <h3 class="card-title" data-lang="en">Focus Areas</h3>
+            <h3 class="card-title hidden" data-lang="zh">重点方向</h3>
+            <ul class="facts">
+              <li data-lang="en">Analytics & BI (Python, SQL, Tableau, Power BI)</li>
+              <li class="hidden" data-lang="zh">数据分析与 BI（Python、SQL、Tableau、Power BI）</li>
+              <li data-lang="en">Process Optimization & Operations Analytics</li>
+              <li class="hidden" data-lang="zh">流程优化与运营分析</li>
+              <li data-lang="en">Business Planning & Stakeholder Communication</li>
+              <li class="hidden" data-lang="zh">商业规划与利益相关者沟通</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#about"><span data-lang="en">About</span><span class="hidden" data-lang="zh">关于我</span></a>
+      <a href="#expertise"><span data-lang="en">Expertise</span><span class="hidden" data-lang="zh">核心能力</span></a>
+      <a href="#experience"><span data-lang="en">Experience</span><span class="hidden" data-lang="zh">经历</span></a>
+      <a href="#projects"><span data-lang="en">Projects</span><span class="hidden" data-lang="zh">项目</span></a>
+      <a href="#education"><span data-lang="en">Education</span><span class="hidden" data-lang="zh">教育</span></a>
+      <a href="#contact"><span data-lang="en">Contact</span><span class="hidden" data-lang="zh">联系</span></a>
     </div>
   </nav>
 
-  <main class="container">
-    <section id="about">
-      <h2>About / 关于我</h2>
-      <p data-lang="en">Data-driven master’s student skilled in analytics, process improvement, and cross-team collaboration.</p>
-      <p class="hidden" data-lang="zh">数据驱动型硕士生，专长于数据分析、流程优化与跨团队协作。</p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills / 技能</h2>
-      <div class="chips">
-        <span class="chip">Python</span>
-        <span class="chip">SQL</span>
-        <span class="chip">Tableau</span>
-        <span class="chip">Power BI</span>
-        <span class="chip">Excel (MOS)</span>
-        <span class="chip">Data Visualization</span>
-        <span class="chip">Process Improvement</span>
+  <main>
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title"><span data-lang="en">About</span><span class="hidden" data-lang="zh">关于我</span></h2>
+        <p class="section-lead" data-lang="en">
+          I build analytics that translate data into decisions. My background blends business management and
+          applied analytics, with experience improving operations through data-driven insights and clear stakeholder communication.
+        </p>
+        <p class="section-lead hidden" data-lang="zh">
+          我专注于把数据转化为可执行的决策成果。背景融合商业管理与应用分析，擅长通过数据洞察优化运营，并与多方团队高效协作。
+        </p>
       </div>
     </section>
 
-    <section id="experience">
-      <h2>Experience / 经历</h2>
-      <div class="item">
-        <h3 data-lang="en">Capgemini — Assistant Consultant</h3>
-        <h3 class="hidden" data-lang="zh">凯捷 — 助理顾问</h3>
-        <div class="meta" data-lang="en">06/2023–08/2023</div>
-        <div class="meta hidden" data-lang="zh">2023/06–2023/08</div>
-        <p data-lang="en">Analyzed operations and implemented RPA/big data for a pharma client.</p>
-        <p class="hidden" data-lang="zh">为医药客户进行流程分析并实施自动化/大数据方案。</p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Projects / 项目</h2>
-      <div class="grid">
-        <div class="item">
-          <h3 data-lang="en">Capstone Business Plan — Team Leader</h3>
-          <h3 class="hidden" data-lang="zh">本科毕业设计：商业计划 — 团队负责人</h3>
-          <div class="meta" data-lang="en">Whitman School • 09/2022–12/2022</div>
-          <div class="meta hidden" data-lang="zh">威特曼商学院 • 2022/09–2022/12</div>
-          <p data-lang="en">Led end-to-end business plan; delivered investor-focused presentation.</p>
-          <p class="hidden" data-lang="zh">主导端到端商业计划并完成面向投资人的路演。</p>
+    <section class="section" id="expertise">
+      <div class="container">
+        <h2 class="section-title"><span data-lang="en">Expertise</span><span class="hidden" data-lang="zh">核心能力</span></h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3 data-lang="en">Analytics & BI</h3>
+            <h3 class="hidden" data-lang="zh">数据分析与 BI</h3>
+            <p data-lang="en">SQL/Python analysis, dashboarding, KPI design, and data storytelling.</p>
+            <p class="hidden" data-lang="zh">SQL/Python 分析、数据看板、KPI 设计与数据叙事。</p>
+          </div>
+          <div class="card">
+            <h3 data-lang="en">Process Improvement</h3>
+            <h3 class="hidden" data-lang="zh">流程优化</h3>
+            <p data-lang="en">Process mapping, RPA insights, and operational efficiency for supply chains.</p>
+            <p class="hidden" data-lang="zh">流程梳理、RPA 洞察与供应链运营效率提升。</p>
+          </div>
+          <div class="card">
+            <h3 data-lang="en">Business Strategy</h3>
+            <h3 class="hidden" data-lang="zh">商业策略</h3>
+            <p data-lang="en">Business planning, stakeholder alignment, and executive-ready presentations.</p>
+            <p class="hidden" data-lang="zh">商业规划、利益相关者对齐与管理层汇报输出。</p>
+          </div>
         </div>
-        <div class="item">
-          <h3 data-lang="en">Supply Chain Analytics Modernization — Assistant Consultant</h3>
-          <h3 class="hidden" data-lang="zh">供应链分析系统升级 — 助理顾问</h3>
-          <div class="meta" data-lang="en">Capgemini • 06/2023–08/2023</div>
-          <div class="meta hidden" data-lang="zh">凯捷 • 2023/06–2023/08</div>
-          <p data-lang="en">Applied RPA and big data to improve logistics efficiency.</p>
-          <p class="hidden" data-lang="zh">应用自动化与大数据提升物流效率。</p>
+
+        <div class="skill-box">
+          <div class="skill-title" data-lang="en">Toolkit</div>
+          <div class="skill-title hidden" data-lang="zh">工具箱</div>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">R</span>
+            <span class="chip">Tableau</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Excel (MOS)</span>
+            <span class="chip">Data Visualization</span>
+            <span class="chip">Process Optimization</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="education">
-      <h2>Education / 教育</h2>
-      <div class="item">
-        <h3 data-lang="en">Columbia University — M.S. in Applied Analytics</h3>
-        <h3 class="hidden" data-lang="zh">哥伦比亚大学 — 应用分析 硕士</h3>
-        <div class="meta" data-lang="en">08/2024–12/2025 (expected)</div>
-        <div class="meta hidden" data-lang="zh">2024/08–2025/12（预计）</div>
-      </div>
-      <div class="item">
-        <h3 data-lang="en">Syracuse University — B.S. in Business Analytics & Finance (GPA 3.7/4.0)</h3>
-        <h3 class="hidden" data-lang="zh">雪城大学 — 商业分析与金融 学士（GPA 3.7/4.0）</h3>
-        <div class="meta" data-lang="en">2020–2024</div>
-        <div class="meta hidden" data-lang="zh">2020–2024</div>
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title"><span data-lang="en">Experience</span><span class="hidden" data-lang="zh">经历</span></h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-lang="en">Capgemini — Assistant Consultant</h3>
+              <h3 class="hidden" data-lang="zh">凯捷 — 助理顾问</h3>
+              <div class="meta" data-lang="en">Shanghai, China · 06/2023–08/2023</div>
+              <div class="meta hidden" data-lang="zh">中国上海 · 2023/06–2023/08</div>
+              <ul class="list">
+                <li data-lang="en">Analyzed production, operations, and logistics workflows for a global life sciences client.</li>
+                <li class="hidden" data-lang="zh">为全球生命科学客户分析生产、运营与物流流程。</li>
+                <li data-lang="en">Applied RPA and big data insights to modernize supply chain analytics and improve efficiency.</li>
+                <li class="hidden" data-lang="zh">应用 RPA 与大数据洞察升级供应链分析，提升效率。</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-lang="en">Welcome Ambassador International (WAI)</h3>
+              <h3 class="hidden" data-lang="zh">国际迎新大使（WAI）</h3>
+              <div class="meta" data-lang="en">Syracuse University · 05/2021–09/2021</div>
+              <div class="meta hidden" data-lang="zh">雪城大学 · 2021/05–2021/09</div>
+              <ul class="list">
+                <li data-lang="en">Supported international students during orientation and campus transition.</li>
+                <li class="hidden" data-lang="zh">协助国际新生入学与校园融入。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact / 联系</h2>
-      <p data-lang="en">Open to roles in analytics, operations, or consulting. Reach out via email or LinkedIn.</p>
-      <p class="hidden" data-lang="zh">寻求分析、运营或咨询方向机会。欢迎通过邮箱或 LinkedIn 联系。</p>
-      <p class="small">Last updated: 2026‑02‑03</p>
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title"><span data-lang="en">Projects</span><span class="hidden" data-lang="zh">项目</span></h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3 data-lang="en">Capstone Business Plan — Team Leader</h3>
+            <h3 class="hidden" data-lang="zh">本科毕业设计：商业计划 — 团队负责人</h3>
+            <div class="meta" data-lang="en">Whitman School · 09/2022–12/2022</div>
+            <div class="meta hidden" data-lang="zh">威特曼商学院 · 2022/09–2022/12</div>
+            <ul class="list">
+              <li data-lang="en">Built a comprehensive business plan and delivered investor-focused presentations.</li>
+              <li class="hidden" data-lang="zh">完成完整商业计划并进行面向投资人的路演展示。</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 data-lang="en">Amazon Pricing Dashboard — Team Leader</h3>
+            <h3 class="hidden" data-lang="zh">亚马逊定价看板 — 负责人</h3>
+            <div class="meta" data-lang="en">Course Project · 01/2023–05/2023</div>
+            <div class="meta hidden" data-lang="zh">课程项目 · 2023/01–2023/05</div>
+            <ul class="list">
+              <li data-lang="en">Built R-based dashboards comparing Amazon with Target and Walmart (2019–2023).</li>
+              <li class="hidden" data-lang="zh">基于 R 构建看板，对比 Amazon、Target 与 Walmart（2019–2023）。</li>
+              <li data-lang="en">Visualized category demand shifts and analyzed post‑pandemic strategy signals.</li>
+              <li class="hidden" data-lang="zh">可视化品类需求变化，分析疫情后策略信号。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      © <span id="y"></span> Teng Lin. All rights reserved.
-    </footer>
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title"><span data-lang="en">Education</span><span class="hidden" data-lang="zh">教育</span></h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3 data-lang="en">Columbia University</h3>
+            <h3 class="hidden" data-lang="zh">哥伦比亚大学</h3>
+            <div class="meta" data-lang="en">M.S. in Applied Analytics · 08/2024–12/2025 (expected)</div>
+            <div class="meta hidden" data-lang="zh">应用分析 硕士 · 2024/08–2025/12（预计）</div>
+          </div>
+          <div class="card">
+            <h3 data-lang="en">Syracuse University</h3>
+            <h3 class="hidden" data-lang="zh">雪城大学</h3>
+            <div class="meta" data-lang="en">B.S. Business Analytics & Finance · GPA 3.7/4.0 · 2020–2024</div>
+            <div class="meta hidden" data-lang="zh">商业分析与金融 学士 · GPA 3.7/4.0 · 2020–2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div>
+          <h2 class="section-title"><span data-lang="en">Contact</span><span class="hidden" data-lang="zh">联系</span></h2>
+          <p class="section-lead" data-lang="en">Open to analytics, operations, or consulting opportunities.</p>
+          <p class="section-lead hidden" data-lang="zh">寻求数据分析、运营或咨询方向机会。</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-item">
+            <span data-lang="en">Email</span><span class="hidden" data-lang="zh">邮箱</span>
+            <a href="mailto:tl3398@columbia.edu">tl3398@columbia.edu</a>
+          </div>
+          <div class="contact-item">
+            <span data-lang="en">Phone</span><span class="hidden" data-lang="zh">电话</span>
+            <a href="tel:+13329997876">+1 332-999-7876</a>
+          </div>
+          <div class="contact-item">
+            <span data-lang="en">LinkedIn</span><span class="hidden" data-lang="zh">领英</span>
+            <a href="https://www.linkedin.com/in/teng-lin" target="_blank" rel="noreferrer noopener">linkedin.com/in/teng-lin</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <footer class="footer">
+    <div class="container">
+      <span data-lang="en">© <span id="y"></span> Teng Lin. All rights reserved.</span>
+      <span class="hidden" data-lang="zh">© <span id="y2"></span> Teng Lin. 保留所有权利。</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();document.getElementById('y2').textContent=new Date().getFullYear();</script>
   <script src="assets/script.js"></script>
 </body>
 </html>

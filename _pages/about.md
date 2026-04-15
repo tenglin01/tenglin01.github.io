@@ -11,8 +11,6 @@ Data analytics professional and graduate researcher at Columbia University, focu
 
 My work combines analytics, business intelligence, and machine learning to improve operational performance, decision quality, and commercial outcomes.
 
-[Download Resume (PDF)](/files/Resume_TENG_LIN.pdf){: .btn .btn--primary}
-
 ## Professional Summary
 
 - Graduate training in Applied Analytics with hands-on experience in consulting and business operations.

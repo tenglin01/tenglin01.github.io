@@ -6,27 +6,17 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">Also available on <a href="{{site.author.googlescholar}}">Google Scholar</a>.</div>
 {% endif %}
 
 {% include base_path %}
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 {% if pubs and pubs.size > 0 %}
+  <p>Peer-reviewed and conference publications.</p>
   {% for post in pubs %}
     {% include archive-single.html %}
   {% endfor %}
 {% else %}
-  <h2>Selected Publication</h2>
-  <ul>
-    <li><a href="/publication/2024-03-14-bidirectional-lstm">Enhancing Stock Price Forecasting and Trading Strategy through Bidirectional LSTM Integration</a></li>
-  </ul>
+  <p>No publications available yet.</p>
 {% endif %}
-
-<hr />
-<h2>Quick Access</h2>
-<ul>
-  <li><a href="/publication/2024-03-14-bidirectional-lstm">Publication Detail Page</a></li>
-  <li><a href="/files/TENG_JIAYI_YUFENG.pdf">Download Paper (PDF)</a></li>
-</ul>
-

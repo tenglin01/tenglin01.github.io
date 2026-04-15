@@ -9,6 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
+## Resume
+- [Download Resume (PDF)](/files/Resume_TENG_LIN.pdf)
+
 ## Contact
 - Email: [tl3398@columbia.edu](mailto:tl3398@columbia.edu)
 - LinkedIn: [linkedin.com/in/teng-lin](https://www.linkedin.com/in/teng-lin)

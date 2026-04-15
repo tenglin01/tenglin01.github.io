@@ -11,6 +11,8 @@ Data analytics professional and graduate researcher at Columbia University, spec
 
 With experience at **Capgemini** and **Shengtetai Food**, I have built systems that directly impact operations and revenue — from automated supply chain pipelines to real-time dashboards tracking $1.5M in annual sales. My research on Bidirectional LSTM architectures for stock price forecasting was published at **IEEE MLHMI 2024**.
 
+[Download Resume (PDF)](/files/Resume_TENG_LIN.pdf){: .btn .btn--primary}
+
 ## Skills
 
 | | |

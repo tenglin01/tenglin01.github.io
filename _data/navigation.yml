@@ -1,1 +1,7 @@
-bWFpbjoKICAtIHRpdGxlOiAiUHVibGljYXRpb25zIgogICAgdXJsOiAvcHVibGljYXRpb25zLwoKICAtIHRpdGxlOiAiQ1YiCiAgICB1cmw6IC9jdi8KCg==
+main:
+  - title: "Publications"
+    url: /publications/
+
+  - title: "CV"
+    url: /cv/
+

@@ -11,10 +11,10 @@ locale                   : "en-US"
 title                    : "Teng Lin"
 title_separator          : "-"
 name                     : &name "Teng Lin"
-description              : &description "Applied Analytics @ Columbia University | Data Analytics, Business Intelligence, and Machine Learning"
-url                      : https://tenglin01.github.io # the base hostname & protocol for your site
+description              : &description "M.S. Applied Analytics @ Columbia University | Data Analytics | Business Intelligence | Machine Learning"
+url                      : https://tenglin01.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "tenglin01/tenglin01.github.io"
+repository               : "tenglin01/academic-portfolio.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,11 +24,12 @@ author:
   avatar           : "profile.jpg"
   name             : "Teng Lin"
   pronouns         : # example: "she/her"
-  bio              : "Applied Analytics graduate researcher at Columbia University. Focused on SQL/Python analytics, BI dashboards, and machine-learning-driven decision support."
+  bio              : "M.S. Applied Analytics student at Columbia University. Experienced in SQL, Python, Tableau, and Power BI. Passionate about data-driven decision making."
   location         : "New York, NY"
   employer         : "Columbia University"
   uri              : # URL
   email            : "tl3398@columbia.edu"
+  resume           : "/files/resume.pdf"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile

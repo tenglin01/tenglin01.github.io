@@ -1,7 +1,6 @@
 ---
 title: "Enhancing Stock Price Forecasting and Trading Strategy through Bidirectional LSTM Integration"
 collection: publications
-category: conferences
 permalink: /publication/2024-03-14-bidirectional-lstm
 excerpt: 'This paper proposes a Bidirectional LSTM (Bi-LSTM) architecture for time-series stock price prediction, demonstrating superior accuracy over standard LSTM and a trading strategy that outperforms a buy-and-hold baseline.'
 date: 2024-03-14
@@ -16,6 +15,6 @@ Accurately predicting data flow is a significant challenge in industrial automat
 
 **Authors:** Jiayi Liu, Yufeng Yang, Teng Lin, Chuanhui Peng, and Yancong Deng
 
-**Published in:** 2024 5th International Conference on Machine Learning and Human-Computer Interaction (MLHMI), pp. 22–25
+**Published in:** 2024 5th International Conference on Machine Learning and Human-Computer Interaction (MLHMI), pp. 22&ndash;25
 
-[Download PDF](/files/TENG_JIAYI_YUFENG.pdf){: .btn .btn--primary} &nbsp; [View on IEEE](https://doi.org/10.1109/MLHMI63000.2024.00013){: .btn .btn--inverse}
+[View on IEEE](https://doi.org/10.1109/MLHMI63000.2024.00013){: .btn .btn--inverse}

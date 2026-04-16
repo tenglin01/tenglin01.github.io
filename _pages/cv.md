@@ -9,56 +9,42 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Education
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+**Columbia University** — M.S. Applied Analytics *(Expected December 2025)*
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+**Syracuse University** — B.S. Business Analytics & Finance *(May 2024)*
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+---
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Experience
+
+**Capgemini** — Business Intelligence Consultant · Shanghai · *Jun – Aug 2023*
+- Analyzed Fortune 500 supply chain data from SAP using SQL and R, delivering strategic insights to C-suite leadership
+- Built Power BI dashboards for real-time visibility into supplier performance and procurement risk
+- Reduced manual data processing effort by 40% through automated workflows and UiPath-SAP integration
+
+**Shengtetai Food** — Data Analyst · Guangzhou · *May 2024 – Jul 2025*
+- Engineered Python pipelines (Pandas, NumPy) processing 50,000+ rows of sales and inventory data
+- Developed Tableau dashboards providing leadership with real-time visibility into $1.5M in annual revenue
+- Identified high-value customer segments through SQL-based behavioral analysis, improving targeted marketing performance
+
+---
+
+## Skills
+
+| | |
+|---|---|
+| **Programming** | Python (Pandas, NumPy, TensorFlow, Matplotlib) · R · SQL |
+| **BI & Visualization** | Tableau · Power BI · Excel |
+| **Machine Learning** | XGBoost · LSTM / Bi-LSTM · Feature Engineering · Hyperparameter Tuning |
+| **Tools** | SAP · UiPath · Microsoft Access |
+| **Languages** | English · Mandarin (Native) · Cantonese |
+
+---
+
+## Publications
+
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>

@@ -13,6 +13,19 @@ body {
 /* ============================================================
    Dark Masthead
    ============================================================ */
+
+/* greedy-nav has background: $background-color (#fff) by default — override */
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav button {
+  background-color: transparent;
+  color: #64748b;
+
+  &:hover { color: #94a3b8; }
+}
+
 .masthead {
   background: #0f172a !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;

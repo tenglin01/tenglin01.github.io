@@ -95,6 +95,8 @@
     box-shadow: 0 0 0 4px #fff, 0 0 0 6px $border-color;
 
     @include breakpoint($large) {
+      display: block;
+      margin: 0 auto;
       padding: 0;
       border: none;
       box-shadow: 0 0 0 3px #0f172a, 0 0 0 5px rgba(56, 189, 248, 0.35);

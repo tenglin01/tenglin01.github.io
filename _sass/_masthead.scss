@@ -4,8 +4,11 @@
 
 .masthead {
   position: fixed;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid $border-color;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   height: $masthead-height;
   top: 0;
   width: 100%;
@@ -19,8 +22,11 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
-    font-family: $sans-serif-narrow;
+    padding: 0 1.5em;
+    height: $masthead-height;
+    display: flex;
+    align-items: center;
+    font-family: $sans-serif;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -51,8 +57,34 @@
   list-style-type: none;
   white-space: nowrap;
 
+  a {
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: $masthead-link-color;
+    padding: 0.4em 0.75em;
+    border-radius: 6px;
+    transition: color 0.15s ease, background 0.15s ease;
+
+    &:hover {
+      color: $masthead-link-color-hover;
+      background: rgba(8, 145, 178, 0.08);
+    }
+  }
+
   &--lg {
-    padding-right: 2em;
-    font-weight: 700;
+    padding-right: 1em;
+
+    a {
+      font-size: 1.05em;
+      font-weight: 700;
+      color: $primary-color;
+      letter-spacing: -0.01em;
+
+      &:hover {
+        background: transparent;
+        color: $link-color;
+      }
+    }
   }
 }

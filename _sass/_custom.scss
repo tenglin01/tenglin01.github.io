@@ -1,0 +1,213 @@
+/* ==========================================================================
+   Custom Design Overrides
+   ========================================================================== */
+
+/* Typography refinements */
+body {
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1e293b;
+}
+
+/* Page headings */
+.page__content {
+  h2 {
+    font-size: 1.15em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #0f172a;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #e2e8f0;
+    margin-top: 2em;
+  }
+
+  h3 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #1e293b;
+  }
+
+  p {
+    color: #334155;
+    line-height: 1.75;
+  }
+
+  a {
+    color: #0891b2;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(8, 145, 178, 0.3);
+    transition: border-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      color: #0e7490;
+      border-bottom-color: #0e7490;
+    }
+  }
+
+  /* Skills / info table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0 1.5em;
+    font-size: 0.9em;
+
+    td {
+      padding: 0.55em 0.75em;
+      border: none;
+      vertical-align: top;
+      line-height: 1.6;
+
+      &:first-child {
+        font-weight: 600;
+        color: #0f172a;
+        white-space: nowrap;
+        width: 140px;
+      }
+
+      &:last-child {
+        color: #475569;
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid #f1f5f9;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background: #f8fafc;
+      }
+    }
+  }
+
+  /* Strong text in experience / education */
+  strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+
+  /* Italic dates */
+  em {
+    color: #94a3b8;
+    font-style: normal;
+    font-size: 0.875em;
+  }
+
+  /* Arrow links */
+  a[href*="publication"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25em;
+    font-size: 0.875em;
+    font-weight: 500;
+    color: #0891b2;
+    border-bottom: none;
+    padding: 0.2em 0.6em;
+    background: rgba(8, 145, 178, 0.08);
+    border-radius: 4px;
+
+    &:hover {
+      background: rgba(8, 145, 178, 0.15);
+      color: #0e7490;
+    }
+  }
+}
+
+/* Sidebar card refinements */
+.sidebar {
+  .author__content {
+    @media screen and (min-width: 1024px) {
+      text-align: center;
+    }
+  }
+
+  .author__urls-wrapper {
+    @media screen and (min-width: 1024px) {
+      margin-top: 0.5em;
+      padding-top: 0.75em;
+      border-top: 1px solid #e2e8f0;
+    }
+  }
+}
+
+/* Navigation link refinements */
+.greedy-nav {
+  a {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+
+  .visible-links {
+    a {
+      &:before {
+        background: #0891b2;
+        height: 2px;
+      }
+    }
+  }
+}
+
+/* Footer */
+.page__footer {
+  background: #0f172a;
+  color: #94a3b8;
+  margin-top: 3em;
+
+  footer {
+    padding: 1.5em 1em;
+  }
+
+  a {
+    color: #64748b;
+
+    &:hover {
+      color: #0891b2;
+    }
+  }
+}
+
+/* Blockquote */
+blockquote {
+  border-left: 3px solid #0891b2;
+  background: #f0f9ff;
+  border-radius: 0 8px 8px 0;
+  padding: 0.75em 1em;
+  color: #1e293b;
+}
+
+/* Code blocks */
+code {
+  background: #f1f5f9;
+  color: #0891b2;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Publication / archive items */
+.archive__item-title {
+  font-size: 1em;
+  font-weight: 600;
+
+  a {
+    color: #0f172a;
+
+    &:hover {
+      color: #0891b2;
+    }
+  }
+}
+
+.archive__item-excerpt {
+  font-size: 0.875em;
+  color: #64748b;
+  line-height: 1.65;
+}

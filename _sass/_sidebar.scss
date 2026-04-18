@@ -97,7 +97,7 @@
     @include breakpoint($large) {
       padding: 0;
       border: none;
-      box-shadow: 0 0 0 4px #fff, 0 0 0 6px rgba(8, 145, 178, 0.25);
+      box-shadow: 0 0 0 3px #0f172a, 0 0 0 5px rgba(56, 189, 248, 0.35);
     }
   }
 }
@@ -131,7 +131,7 @@
   font-size: 1.05em;
   font-weight: 700;
   letter-spacing: -0.01em;
-  color: $primary-color;
+  color: $dark-gray;
 }
 
 .sidebar .author__desktop {
@@ -258,7 +258,7 @@
     margin-bottom: 3px;
     padding: 5px 8px;
     border-radius: 6px;
-    color: $dark-gray;
+    color: $gray;
     font-size: $type-size-6;
     text-decoration: none;
     transition: color 0.15s ease, background 0.15s ease;
@@ -269,4 +269,13 @@
       text-decoration: none;
     }
   }
+}
+
+/* Dark sidebar overrides — desktop only */
+@media screen and (min-width: 1024px) {
+  .sidebar .author__name     { color: #f1f5f9; }
+  .sidebar .author__bio      { color: #94a3b8; }
+  .sidebar .author__pronouns { color: #64748b; }
+  .author__urls a            { color: #94a3b8; }
+  .author__urls a:hover      { color: #38bdf8; background: rgba(56, 189, 248, 0.1); }
 }

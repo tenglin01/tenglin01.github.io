@@ -52,7 +52,7 @@ body {
 }
 
 /* ============================================================
-   Dark Sidebar (desktop only)
+   Dark Sidebar (desktop only) — base rules in _sidebar.scss
    ============================================================ */
 @media screen and (min-width: 1024px) {
   .sidebar {
@@ -61,59 +61,18 @@ body {
     border-right: 1px solid rgba(255, 255, 255, 0.06);
   }
 
-  .sidebar h2,
-  .sidebar h3,
-  .sidebar h4 {
-    color: #f1f5f9;
-  }
-
-  .sidebar .author__name {
-    color: #f1f5f9 !important;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    font-size: 1.1em;
-    text-align: center;
-  }
-
-  .sidebar .author__bio {
-    color: #64748b !important;
-    text-align: center;
-    font-size: 0.78em;
-    line-height: 1.6;
-  }
-
   .author__content {
     text-align: center;
   }
 
-  .author__avatar img {
-    box-shadow: 0 0 0 3px #0f172a, 0 0 0 5px rgba(56, 189, 248, 0.35) !important;
-    transition: box-shadow 0.2s ease;
-
-    &:hover {
-      box-shadow: 0 0 0 3px #0f172a, 0 0 0 6px rgba(56, 189, 248, 0.6) !important;
-    }
+  .author__avatar img:hover {
+    box-shadow: 0 0 0 3px #0f172a, 0 0 0 6px rgba(56, 189, 248, 0.6);
   }
 
   .author__urls-wrapper {
-    border-top: 1px solid rgba(255, 255, 255, 0.07) !important;
-    padding-top: 1em !important;
-    margin-top: 0.75em !important;
-  }
-
-  .author__urls a {
-    color: #64748b !important;
-    font-size: 0.8em !important;
-    border-radius: 6px;
-
-    &:hover {
-      color: #38bdf8 !important;
-      background: rgba(56, 189, 248, 0.08) !important;
-    }
-  }
-
-  .author__urls li span {
-    color: #64748b;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    padding-top: 1em;
+    margin-top: 0.75em;
   }
 }
 
@@ -132,10 +91,6 @@ body {
   }
 }
 
-/* Hide redundant "About" page title */
-.page__title {
-  display: none;
-}
 
 /* ============================================================
    Section headings — data-dashboard style
@@ -619,9 +574,21 @@ li > code {
 /* ============================================================
    Archive / Publications page
    ============================================================ */
+
+/* Entry spacing + separator */
+.list__item {
+  padding-bottom: 1.75em;
+  margin-bottom: 1.75em;
+  border-bottom: 1px solid #f1f5f9;
+
+  &:last-child { border-bottom: none; margin-bottom: 0; }
+}
+
 .archive__item-title {
-  font-size: 0.95em;
-  font-weight: 600;
+  font-size: 1.05em;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  font-family: $sans-serif;
 
   a {
     color: #0f172a !important;
@@ -632,10 +599,41 @@ li > code {
   }
 }
 
+/* "Published in Venue, YYYY" paragraph */
+.archive__item p:first-of-type {
+  font-size: 0.78em;
+  color: #0891b2;
+  font-weight: 500;
+  margin: 0.1em 0 0.5em;
+  font-style: normal;
+
+  i { font-style: italic; }
+}
+
 .archive__item-excerpt {
-  font-size: 0.85em;
-  color: #64748b;
-  line-height: 1.65;
+  font-size: 0.875em !important;
+  color: #475569;
+  line-height: 1.75 !important;
+  margin-top: 0.4em !important;
+}
+
+/* Citation / download block */
+.archive__item p:last-of-type:not(:first-of-type) {
+  font-size: 0.775em;
+  color: #94a3b8;
+  margin-top: 0.75em;
+  padding: 0.6em 0.9em;
+  background: #f8fafc;
+  border-left: 2px solid #e2e8f0;
+  border-radius: 0 6px 6px 0;
+  line-height: 1.6;
+
+  a {
+    color: #0891b2 !important;
+    font-weight: 600;
+    border-bottom: none !important;
+    &:hover { color: #0e7490 !important; }
+  }
 }
 
 /* ============================================================

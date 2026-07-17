@@ -18,8 +18,8 @@ redirect_from:
     <div class="stat-label">Revenue Tracked</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">18%</div>
-    <div class="stat-label">Strategy Alpha</div>
+    <div class="stat-number">98%</div>
+    <div class="stat-label">Search Hit@10</div>
   </div>
   <div class="stat-card">
     <div class="stat-number">40%</div>
@@ -127,24 +127,36 @@ redirect_from:
 
 <div class="project-grid">
   <div class="project-card">
-    <div class="project-card__badge">IEEE MLHMI 2024</div>
-    <div class="project-card__title">Bidirectional LSTM for Stock Price Forecasting</div>
-    <p class="project-card__desc">Co-authored a peer-reviewed paper proposing a Bi-LSTM architecture that outperforms standard LSTM for time-series stock prediction across 11 stocks in 8 sectors. Developed an accompanying trading strategy with measurable alpha over a buy-and-hold baseline.</p>
+    <div class="project-card__badge">NLP · Information Retrieval</div>
+    <div class="project-card__title">Amazon Product Search &amp; Review Summarization</div>
+    <p class="project-card__desc">Co-developed a product search and review-summarization system that processed 300,000 customer reviews and indexed 104,259 Amazon Office Products using TF-IDF and cosine similarity.</p>
     <div class="project-card__metrics">
-      <span class="project-card__metric">18% higher returns</span>
-      <span class="project-card__metric">11 stocks · 8 sectors</span>
-      <span class="project-card__metric">Peer-reviewed</span>
+      <span class="project-card__metric">98.0% Hit@10</span>
+      <span class="project-card__metric">92.45% MRR@10</span>
+      <span class="project-card__metric">104K+ products</span>
     </div>
-    <a href="/publication/2024-03-14-bidirectional-lstm" class="project-card__link">View publication →</a>
+    <a href="/portfolio/amazon-product-search/" class="project-card__link">View project →</a>
   </div>
   <div class="project-card">
-    <div class="project-card__badge">Kaggle · 2024</div>
-    <div class="project-card__title">Click-Through Rate Prediction</div>
-    <p class="project-card__desc">Engineered features from ad content, sentiment scores, and audience targeting metadata to train an XGBoost classifier. Reduced RMSE by 33% through hyperparameter tuning, regularization, and cross-validation.</p>
+    <div class="project-card__badge">Business Analytics · NLP</div>
+    <div class="project-card__title">ChatGPT vs. DeepSeek User Sentiment &amp; Product Strategy</div>
+    <p class="project-card__desc">Analyzed approximately 843,000 public social-media and app-review records in a five-person team using sentiment lexicons, statistical tests, K-means, PCA, and time-series analysis.</p>
     <div class="project-card__metrics">
-      <span class="project-card__metric">33% RMSE reduction</span>
-      <span class="project-card__metric">XGBoost</span>
-      <span class="project-card__metric">Feature Engineering</span>
+      <span class="project-card__metric">843K records</span>
+      <span class="project-card__metric">12.9% vs. 6.7% negative</span>
+      <span class="project-card__metric">Product strategy</span>
     </div>
+    <a href="/portfolio/chatgpt-deepseek-sentiment/" class="project-card__link">View project →</a>
+  </div>
+  <div class="project-card">
+    <div class="project-card__badge">IEEE MLHMI 2024</div>
+    <div class="project-card__title">BiLSTM Stock Forecasting &amp; Dynamic Trading Strategy</div>
+    <p class="project-card__desc">Co-authored a peer-reviewed study comparing LSTM and BiLSTM forecasts across 11 stocks in 8 sectors, then evaluated a dynamic top-five portfolio across four rebalancing windows.</p>
+    <div class="project-card__metrics">
+      <span class="project-card__metric">11 stocks · 8 sectors</span>
+      <span class="project-card__metric">4 rebalance windows</span>
+      <span class="project-card__metric">IEEE-published</span>
+    </div>
+    <a href="/portfolio/bilstm-stock-strategy/" class="project-card__link">View project →</a>
   </div>
 </div>

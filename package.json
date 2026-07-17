@@ -1,10 +1,10 @@
 {
-  "name": "academic-pages",
+  "name": "teng-lin-analytics-portfolio",
   "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "description": "Build tooling for Teng Lin's analytics portfolio",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/tenglin01/tenglin01.github.io"
   },
   "keywords": [
     "jekyll",
@@ -12,14 +12,13 @@
     "minimal"
   ],
   "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
+    "Teng Lin"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
+    "url": "https://github.com/tenglin01/tenglin01.github.io/issues"
   },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://tenglin01.github.io/",
   "engines": {
     "node": ">= 0.10.0"
   },
